@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>tull</title>
+    <title>Animasjon</title>
+    <style>
+
+       body {background-image: url("img/3.jpg");
+
+
+        }
+        @keyframes catwalk {
+            to{
+                background-position: 0-12500px;
+            }
+
+        }
+        
+        .robot {
+            background-image: url("img/finito-01.png");
+            height: 500px;
+            width: 500px;
+            animation: catwalk 4s steps(25) infinite alternate;
+            margin: 300px;
+
+        }
+
+        #k1 { animation-delay: 5s; }
+
+
+    </style>
+
+
+
 </head>
 <body>
-tull er gull
+<div class="right" id="k1"></div>
+    <div class="robot"></div>
+
+
 </body>
 </html>
